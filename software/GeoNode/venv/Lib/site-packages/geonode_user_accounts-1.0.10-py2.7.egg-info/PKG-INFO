@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: geonode-user-accounts
+Version: 1.0.10
+Summary: a Django user account app
+Home-page: https://github.com/GeoNode/geonode-user-accounts
+Author: Brian Rosner
+Author-email: brosner@gmail.com
+License: MIT
+Description: ==============================================
+        django-user-accounts: user accounts for Django
+        ==============================================
+        
+        Provides user accounts to a GeoNode project.
+        
+        Forked from django-user-account for implementing the user invitation feature.
+        When in django-user-account it will be re-enabled that feature (once existing in 
+        Pinax) we will move back to it.
+        
+        Requirements
+        ============
+        
+        * Django 1.4+
+        * Python 2.6+ or Python 3.3+
+        * django-appconf (included in ``install_requires``)
+        * pytz (included in ``install_requires``)
+        
+        Documentation
+        =============
+        
+        See http://django-user-accounts.readthedocs.org/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django

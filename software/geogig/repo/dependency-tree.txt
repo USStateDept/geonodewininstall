@@ -1,0 +1,82 @@
+org.locationtech.geogig:geogig-cli-app:pom:1.0-beta1
++- org.locationtech.geogig:geogig-cli:jar:1.0-beta1:compile
+|  +- org.locationtech.geogig:geogig-core:jar:1.0-beta1:compile
+|  |  +- com.vividsolutions:jts:jar:1.13:compile
+|  |  +- org.geotools:gt-opengis:jar:11.2:compile
+|  |  |  +- net.java.dev.jsr-275:jsr-275:jar:1.0-beta-2:compile
+|  |  |  +- java3d:vecmath:jar:1.3.2:compile
+|  |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+|  |  +- org.geotools:gt-referencing:jar:11.2:compile
+|  |  |  +- org.geotools:gt-metadata:jar:11.2:compile
+|  |  |  \- jgridshift:jgridshift:jar:1.0:compile
+|  |  +- org.geotools:gt-epsg-hsql:jar:11.2:compile
+|  |  |  \- org.hsqldb:hsqldb:jar:2.2.8:compile
+|  |  +- org.geotools:gt-main:jar:11.2:compile
+|  |  |  \- org.geotools:gt-api:jar:11.2:compile
+|  |  +- org.geotools:gt-cql:jar:11.2:compile
+|  |  +- com.google.inject.extensions:guice-multibindings:jar:3.0:compile
+|  |  \- com.ning:compress-lzf:jar:1.0.1:compile
+|  +- org.locationtech.geogig:geogig-bdbje:jar:1.0-beta1:compile
+|  +- org.locationtech.geogig:geogig-mongodb:jar:1.0-beta1:compile
+|  |  \- org.mongodb:mongo-java-driver:jar:2.12.2:compile
+|  +- org.locationtech.geogig:geogig-sqlite-xerial:jar:1.0-beta1:compile
+|  |  +- org.locationtech.geogig:geogig-sqlite-core:jar:1.0-beta1:compile
+|  |  \- org.xerial:sqlite-jdbc:jar:3.7.2:compile
+|  +- org.locationtech.geogig:geogig-metrics:jar:1.0-beta1:compile
+|  +- ch.qos.logback:logback-core:jar:1.1.2:compile
+|  +- ch.qos.logback:logback-classic:jar:1.1.2:compile
+|  +- org.slf4j:slf4j-api:jar:1.7.5:compile
+|  +- org.slf4j:jul-to-slf4j:jar:1.7.5:compile
+|  +- com.beust:jcommander:jar:1.35:compile
+|  +- jline:jline:jar:2.11:compile
+|  +- org.geotools:gt-shapefile:jar:11.2:compile
+|  |  +- org.geotools:gt-data:jar:11.2:compile
+|  |  +- org.jdom:jdom:jar:1.1.3:compile
+|  |  \- javax.media:jai_core:jar:1.1.3:compile
+|  +- com.google.guava:guava:jar:17.0:compile
+|  +- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+|  +- com.google.inject:guice:jar:no_aop:3.0:compile
+|  |  \- javax.inject:javax.inject:jar:1:compile
+|  \- net.sf.py4j:py4j:jar:0.8.1:compile
++- org.locationtech.geogig:geogig-geotools:jar:1.0-beta1:compile
+|  +- org.geotools.jdbc:gt-jdbc-postgis:jar:11.2:compile
+|  |  +- postgresql:postgresql:jar:8.4-701.jdbc3:compile
+|  |  \- org.geotools:gt-jdbc:jar:11.2:compile
+|  |     +- commons-dbcp:commons-dbcp:jar:1.4:compile
+|  |     \- commons-collections:commons-collections:jar:3.1:compile
+|  +- org.geotools.jdbc:gt-jdbc-spatialite:jar:11.2:compile
+|  |  \- org.xerial:spatialite-jdbc:jar:3.7.2-2.4:compile
+|  +- org.geotools.jdbc:gt-jdbc-sqlserver:jar:11.2:compile
+|  +- org.geotools.jdbc:gt-jdbc-oracle:jar:11.2:compile
+|  \- org.geotools:gt-geojson:jar:11.2:compile
+|     \- com.googlecode.json-simple:json-simple:jar:1.1:compile
++- org.locationtech.geogig:geogig-osm:jar:1.0-beta1:compile
+|  +- com.sleepycat:je:jar:5.0.84:compile
+|  +- org.openstreetmap.osmosis:osmosis-core:jar:0.43.1:compile
+|  |  +- org.codehaus.woodstox:stax2-api:jar:3.1.1:compile
+|  |  +- xerces:xercesImpl:jar:2.9.1:compile
+|  |  +- org.codehaus.woodstox:woodstox-core-lgpl:jar:4.1.4:compile
+|  |  +- net.sf.jpf:jpf:jar:1.5:compile
+|  |  |  \- commons-logging:commons-logging:jar:1.0.4:compile
+|  |  \- org.apache.commons:commons-compress:jar:1.4.1:compile
+|  |     \- org.tukaani:xz:jar:1.0:compile
+|  +- org.openstreetmap.osmosis:osmosis-xml:jar:0.43.1:compile
+|  |  \- commons-codec:commons-codec:jar:1.7:compile
+|  \- org.openstreetmap.osmosis:osmosis-pbf:jar:0.43.1:compile
+|     +- org.openstreetmap.osmosis:osmosis-osm-binary:jar:0.43.1:compile
+|     \- com.google.protobuf:protobuf-java:jar:2.4.1:compile
+\- org.locationtech.geogig:geogig-web-app:jar:classes:1.0-beta1:compile
+   +- org.restlet:org.restlet:jar:1.0.8:compile
+   +- com.noelios.restlet:com.noelios.restlet.ext.jetty:jar:1.0.8:compile
+   |  +- com.noelios.restlet:com.noelios.restlet:jar:1.0.8:compile
+   |  +- org.mortbay.jetty:jetty:jar:6.1.5:compile
+   |  |  \- org.mortbay.jetty:servlet-api-2.5:jar:6.1.5:compile
+   |  +- org.mortbay.jetty:jetty-ajp:jar:6.1.5:compile
+   |  +- org.mortbay.jetty:jetty-sslengine:jar:6.1.5:compile
+   |  \- org.mortbay.jetty:jetty-util:jar:6.1.5:compile
+   +- com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.0.8:compile
+   |  \- javax.servlet:servlet-api:jar:2.4:compile
+   +- org.locationtech.geogig:geogig-web-api:jar:1.0-beta1:compile
+   |  \- org.codehaus.jettison:jettison:jar:1.0.1:compile
+   |     \- stax:stax-api:jar:1.0.1:compile
+   \- com.google.code.gson:gson:jar:2.2.2:compile

@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: geonode-dialogos
+Version: 0.4
+Summary: a flaggable comments app
+Home-page: http://github.com/GeoNode/geonode-dialogos
+Author: Eldarion
+Author-email: development@eldarion.com
+License: BSD
+Description: Dialogos 
+        ========
+        
+        Dialogos is a comments app for Django.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django
