@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-classification-banner
+Version: 0.1.4
+Summary: A django app that adds classification banners to your site.
+Home-page: https://github.com/garnertb/django-classification-banner
+Author: Tyler Garner
+Author-email: garnertb@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

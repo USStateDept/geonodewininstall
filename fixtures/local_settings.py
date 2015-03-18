@@ -1,7 +1,11 @@
 from settings import *
 import geonode
 
-INSTALLED_APPS  = ("maploom",)  + INSTALLED_APPS + ("geonode.contrib.geogig",) 
+INSTALLED_APPS  = ("maploom",)  + INSTALLED_APPS + ("geonode.contrib.geogig","django_classification_banner",) 
+
+TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS + (
+    'django_classification_banner.context_processors.classification',
+)
 
 DATABASES = {
     'default': {
@@ -167,6 +171,13 @@ LAYER_PREVIEW_LIBRARY = 'geoext'
 
 
 GEOS_LIBRARY_PATH = r'__geonodedir__/venv/Lib/site-packages/osgeo/geos.dll'
+
+
+# #DJANGO DATA CLASSIFICATION BAR
+# CLASSIFCATION_BANNER_ENABLED = True
+# CLASSIFICATION_TEXT = 'Unclassified//FOUO'
+# CLASSIFICATION_TEXT_COLOR = 'black'
+# CLASSIFICATION_BACKGROUND_COLOR = 'green'
 
 
 ## Run pip install -r requirements.txt in geonode/scripts/ldap_auth
