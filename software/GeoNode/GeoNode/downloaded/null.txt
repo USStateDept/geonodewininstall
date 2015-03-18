@@ -1,0 +1,160 @@
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded style 'line'
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded style 'point'
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded style 'polygon'
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded style 'raster'
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded default workspace geonode
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded workspace 'geonode'
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded service 'wcs', enabled
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded service 'wfs', enabled
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded service 'wms', enabled
+13 Mar 10:07:36 INFO [org.geoserver] - Loaded service 'WPSInfoImpl-612cbe45:14c135b0e2d:-7fff', enabled
+13 Mar 10:07:37 INFO [storage.DefaultStorageFinder] - ******************************************************************************************************************************************************************************************
+13 Mar 10:07:37 INFO [storage.DefaultStorageFinder] - *** Found Java environment variable GEOSERVER_DATA_DIR set to C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data, using it as the default prefix. ***
+13 Mar 10:07:37 INFO [storage.DefaultStorageFinder] - ******************************************************************************************************************************************************************************************
+13 Mar 10:07:37 INFO [config.XMLConfiguration] - Will look for geowebcache.xml in 'C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\gwc'
+13 Mar 10:07:37 INFO [gwc.config] - Initializing GeoServer specific GWC configuration from gwc-gs.xml
+10:07:38,171 |-INFO in ch.qos.logback.core.db.DataSourceConnectionSource@4557e3e8 - Driver name=SQLiteJDBC
+10:07:38,171 |-INFO in ch.qos.logback.core.db.DataSourceConnectionSource@4557e3e8 - Driver version=pure
+10:07:38,171 |-INFO in ch.qos.logback.core.db.DataSourceConnectionSource@4557e3e8 - supportsGetGeneratedKeys=false
+
+13 Mar 10:07:38 INFO [gwc.layer] - Initializing GWC configuration based on GeoServer's Catalog
+13 Mar 10:07:38 INFO [gwc.layer] - GeoServer TileLayer store base directory is: C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\gwc-layers
+13 Mar 10:07:38 INFO [gwc.layer] - Loading tile layers from C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\gwc-layers
+13 Mar 10:07:38 INFO [gwc.layer] - GWC configuration based on GeoServer's Catalog loaded successfuly
+13 Mar 10:07:38 INFO [layer.TileLayerDispatcher] - Configuration GeoServer Catalog Configuration contained no layers.
+13 Mar 10:07:38 INFO [config.XMLConfiguration] - Found configuration file in C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\gwc
+13 Mar 10:07:38 INFO [config.XMLConfiguration] - Configuration file validated fine.
+13 Mar 10:07:38 INFO [config.XMLConfiguration] - Initializing GridSets from C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\gwc
+13 Mar 10:07:38 INFO [config.XMLConfiguration] - Initializing layers from C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\gwc
+13 Mar 10:07:38 INFO [layer.TileLayerDispatcher] - Configuration C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\gwc contained no layers.
+13 Mar 10:07:38 INFO [diskquota.ConfigLoader] - DiskQuota configuration not found: C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\gwc\geowebcache-diskquota.xml
+13 Mar 10:07:38 INFO [diskquota.ConfigLoader] - DiskQuota configuration not found: C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\gwc\geowebcache-diskquota.xml
+13 Mar 10:07:38 INFO [diskquota.DiskQuotaMonitor] - Setting up disk quota periodic enforcement task
+13 Mar 10:07:38 INFO [diskquota.DiskQuotaMonitor] - 0 layers configured with their own quotas. 
+13 Mar 10:07:38 INFO [diskquota.DiskQuotaMonitor] - 0 layers attached to global quota 500.0 MB
+13 Mar 10:07:38 INFO [diskquota.DiskQuotaMonitor] - Disk quota periodic enforcement task set up every 10 SECONDS
+13 Mar 10:07:38 INFO [ows.OWSHandlerMapping] - Mapped URL path [/gwc/service/**] onto handler 'dispatcher'
+13 Mar 10:07:38 INFO [geowebcache.GeoWebCacheDispatcher] - Invoked setServletPrefix(gwc)
+13 Mar 10:07:38 INFO [georss.GeoRSSPoller] - Initializing GeoRSS poller in a background job...
+13 Mar 10:07:38 INFO [georss.GeoRSSPoller] - No enabled GeoRSS feeds found, poller will not run.
+13 Mar 10:07:38 INFO [rest.RESTDispatcher] - Created RESTDispatcher with 14 paths
+13 Mar 10:07:38 INFO [wms.WMSService] - Will NOT recombine tiles for non-tiling clients.
+13 Mar 10:07:38 INFO [wms.WMSService] - Will proxy requests to backend that are not getmap or getcapabilities.
+13 Mar 10:07:41 INFO [ows.OWSHandlerMapping] - Mapped URL path [/kml] onto handler 'dispatcher'
+13 Mar 10:07:41 INFO [ows.OWSHandlerMapping] - Mapped URL path [/kml/*] onto handler 'dispatcher'
+13 Mar 10:07:41 INFO [ows.OWSHandlerMapping] - Mapped URL path [/kml/icon/**/*] onto handler 'kmlIconService'
+13 Mar 10:07:41 INFO [ows.OWSHandlerMapping] - Mapped URL path [/ows/**] onto handler 'dispatcher'
+13 Mar 10:07:41 INFO [ows.OWSHandlerMapping] - Mapped URL path [/ows] onto handler 'dispatcher'
+13 Mar 10:07:41 INFO [org.geoserver] - GeoServer configuration lock is enabled
+13 Mar 10:07:42 INFO [ows.OWSHandlerMapping] - Mapped URL path [/wcs] onto handler 'dispatcher'
+13 Mar 10:07:42 INFO [ows.OWSHandlerMapping] - Mapped URL path [/wcs/**] onto handler 'dispatcher'
+13 Mar 10:07:43 INFO [ows.OWSHandlerMapping] - Mapped URL path [/wfs/*] onto handler 'dispatcher'
+13 Mar 10:07:43 INFO [ows.OWSHandlerMapping] - Mapped URL path [/TestWfsPost] onto handler 'wfsTestServlet'
+13 Mar 10:07:43 INFO [ows.OWSHandlerMapping] - Mapped URL path [/wfs] onto handler 'dispatcher'
+13 Mar 10:07:46 INFO [ows.OWSHandlerMapping] - Mapped URL path [/wms/*] onto handler 'dispatcher'
+13 Mar 10:07:46 INFO [ows.OWSHandlerMapping] - Mapped URL path [/wms] onto handler 'dispatcher'
+13 Mar 10:07:47 INFO [ows.OWSHandlerMapping] - Mapped URL path [/animate] onto handler 'dispatcher'
+13 Mar 10:07:47 INFO [ows.OWSHandlerMapping] - Mapped URL path [/animate/*] onto handler 'dispatcher'
+13 Mar 10:07:47 INFO [ows.OWSHandlerMapping] - Mapped URL path [/wps] onto handler 'dispatcher'
+13 Mar 10:07:47 INFO [ows.OWSHandlerMapping] - Mapped URL path [/wps/*] onto handler 'dispatcher'
+13 Mar 10:07:47 INFO [ows.OWSHandlerMapping] - Mapped URL path [/temp/**] onto handler 'filePublisher'
+13 Mar 10:07:47 INFO [geoserver.wps] - Blacklisting process geonode:BatchDownload as the input LAYERS of type class org.geonode.process.batchdownload.LayerReference cannot be handled
+13 Mar 10:07:47 INFO [geoserver.wps] - Blacklisting process geonode:BatchDownload as the input map of type class org.geonode.process.batchdownload.MapMetadata cannot be handled
+13 Mar 10:07:47 INFO [geoserver.wps] - Blacklisting process geonode:BatchDownload as the output ZippedFile of type interface org.geonode.process.storage.Resource cannot be handled
+13 Mar 10:07:47 INFO [geoserver.wps] - Found 0 bindable processes in Batch Downloader
+13 Mar 10:07:47 INFO [geoserver.wps] - Found 89 bindable processes in Deprecated processes
+13 Mar 10:07:47 INFO [geoserver.wps] - Found 29 bindable processes in Vector processes
+13 Mar 10:07:47 INFO [geoserver.wps] - Found 48 bindable processes in Geometry processes
+13 Mar 10:07:47 INFO [geoserver.wps] - Found 14 bindable processes in Raster processes
+13 Mar 10:07:47 INFO [geoserver.wps] - Found 5 bindable processes in GeoServer specific processes
+13 Mar 10:07:48 INFO [geoserver.importer] - Enabling import store: memory
+13 Mar 10:07:48 WARN [geoserver.security] - C:\Users\Administrator\Desktop\geonodewin_March\software\GeoNode\GeoNode\geoserver\data\security\masterpw.info is a security risk. Please read this file and remove it afterward
+13 Mar 10:07:48 INFO [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
+13 Mar 10:07:48 INFO [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+13 Mar 10:07:48 INFO [geoserver.security] - Start reloading user/grous for service named default
+13 Mar 10:07:48 INFO [geoserver.security] - Reloading user/groups successful for service named default
+13 Mar 10:07:50 WARN [geonode.security] - Error connecting to the GeoNode server for authentication purposes
+org.springframework.security.authentication.AuthenticationServiceException: Communication with GeoNode failed (UsernamePasswordAuthenticationToken)
+	at org.geonode.security.GeoNodeAuthenticationProvider.authenticate(GeoNodeAuthenticationProvider.java:61)
+	at org.geoserver.security.GeoServerAuthenticationProvider.authenticate(GeoServerAuthenticationProvider.java:58)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:156)
+	at org.geonode.security.GeoNodeAnonymousProcessingFilter.doFilter(GeoNodeAnonymousProcessingFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geonode.security.GeoNodeCookieProcessingFilter.doFilter(GeoNodeCookieProcessingFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:76)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:48)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.commons.httpclient.ConnectTimeoutException: The host did not accept the connection within timeout of 1000 ms
+	at org.apache.commons.httpclient.protocol.ReflectionSocketFactory.createSocket(ReflectionSocketFactory.java:155)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:125)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.geonode.security.HTTPClient.sendGET(HTTPClient.java:70)
+	at org.geonode.security.DefaultSecurityClient.authenticate(DefaultSecurityClient.java:152)
+	at org.geonode.security.DefaultSecurityClient.authenticateAnonymous(DefaultSecurityClient.java:135)
+	at org.geonode.security.GeoNodeAuthenticationProvider.authenticate(GeoNodeAuthenticationProvider.java:48)
+	... 53 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.commons.httpclient.protocol.ReflectionSocketFactory.createSocket(ReflectionSocketFactory.java:140)
+	... 64 more

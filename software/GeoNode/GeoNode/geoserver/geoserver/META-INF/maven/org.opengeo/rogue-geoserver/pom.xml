@@ -1,0 +1,459 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.opengeo</groupId>
+  <artifactId>rogue-geoserver</artifactId>
+  <packaging>jar</packaging>
+  <version>2.6-SNAPSHOT</version>
+  <name>ROGUE GeoServer</name>
+
+<!--
+  <distributionManagement>
+    <repository>
+      <id>opengeo</id>
+      <name>OpenGeo Maven Repository</name>
+      <url>dav:http://repo.opengeo.org</url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <snapshotRepository>
+      <id>opengeo</id>
+      <name>OpenGeo Maven Repository</name>
+      <url>dav:http://repo.opengeo.org</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+  </distributionManagement>
+-->
+  <repositories>
+    <repository>
+      <id>opengeo</id>
+      <name>OpenGeo Maven Repository</name>
+      <url>http://repo.boundlessgeo.com/main</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>org.mapfish</id>
+      <url>http://dev.mapfish.org/maven/repository</url>
+    </repository>
+    <repository>
+      <id>osgeo</id>
+      <url>http://download.osgeo.org/webdav/geotools</url>
+    </repository>
+    <repository>
+      <id>oracle</id>
+      <name>Oracles Maven Repository</name>
+      <url>http://download.oracle.com/maven/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>oracleReleases</id>
+      <name>Oracle Released Java Packages</name>
+      <url>http://download.oracle.com/maven</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.geoserver</groupId>
+      <artifactId>gs-rest</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver.web</groupId>
+      <artifactId>gs-web-sec-core</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver.extension</groupId>
+      <artifactId>gs-printing</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver</groupId>
+      <artifactId>gs-restconfig</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver.extension</groupId>
+      <artifactId>gs-web-wps</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.opengeo</groupId>
+      <artifactId>geonode-geoserver-ext</artifactId>
+      <version>${gsgeonode.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xercesImpl</artifactId>
+      <version>2.7.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver.extension</groupId>
+      <artifactId>gs-excel</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>
+    <!--dependency>
+      <groupId>org.geoserver.community</groupId>
+      <artifactId>ftp</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency-->
+    <dependency>
+      <groupId>org.geoserver.web</groupId>
+      <artifactId>gs-web-app</artifactId>
+      <type>jar</type>
+      <version>${geoserver.version}</version>
+      <scope>runtime</scope>
+		<exclusions>
+		  <exclusion>
+		    <groupId>net.sf.json-lib</groupId>
+		    <artifactId>json-lib</artifactId>
+		  </exclusion>
+		</exclusions>
+    </dependency>
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+      <version>3.1</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.geoserver.importer</groupId>
+        <artifactId>gs-importer-core</artifactId>
+        <version>${geoserver.version}</version>
+        <scope>runtime</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.geoserver.importer</groupId>
+        <artifactId>gs-importer-web</artifactId>
+        <version>${geoserver.version}</version>
+        <scope>runtime</scope>
+    </dependency>
+   
+    <dependency>
+        <groupId>org.geoserver.importer</groupId>
+        <artifactId>gs-importer-rest</artifactId>
+        <version>${geoserver.version}</version>
+        <scope>runtime</scope>
+    </dependency>
+<!-- TODO: make sure csv still works -->
+<!-- 
+   This was discontinued from the opengeo repo for
+   geoserver version 2.5. If someone is able to get a 2.5.1
+   version deployed repo.opengeo.org this can be enabled again.
+   Commented out by ingenieroariel on May 29, 2014.
+
+    <dependency>
+        <groupId>org.opengeo.data.csv</groupId>
+        <artifactId>csv</artifactId>
+        <version>${geoserver.version}</version>
+        <scope>runtime</scope>
+    </dependency>
+-->
+    <dependency>
+      <groupId>org.geoserver.extension</groupId>
+      <artifactId>gs-wps-core</artifactId>
+      <version>${geoserver.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.geotools.xsd</groupId>
+      <artifactId>gt-xsd-kml</artifactId>
+      <version>${geotools.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.opengeo.geoserver</groupId>
+        <artifactId>printng</artifactId>
+        <version>${geoserver.version}</version>
+        <scope>runtime</scope>
+    </dependency>
+<!--
+    <dependency>
+      <groupId>org.opengeo.geoserver</groupId>
+      <artifactId>gs-fgdb</artifactId>
+      <version>${geoserver.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+-->
+    <dependency>
+        <groupId>org.geotools</groupId>
+        <artifactId>gt-shapefile</artifactId>
+        <version>${geotools.version}</version>
+    </dependency>
+  <!-- TODO: version in rogue used version 14.0.1 but geoserver-geonode-ext pom used 11.0.1. guava is on 17.0 now -->
+<!--
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>14.0.1</version>
+    </dependency>
+-->
+
+    <!-- GeoJSON module dependencies -->
+    <dependency>
+      <groupId>net.sf.json-lib</groupId>
+      <artifactId>json-lib</artifactId>
+      <version>2.2.3</version>
+      <classifier>jdk15</classifier>
+    </dependency>
+    
+    <!-- This dependency is temporary in order to hold a fake process while developing the REST process wrapper -->
+    <dependency>
+      <groupId>org.geotools</groupId>
+      <artifactId>gt-process</artifactId>
+      <version>${geotools.version}</version>
+    </dependency>
+
+<!--
+    <dependency>
+      <groupId>org.opengeo.geoserver</groupId>
+      <artifactId>gsr</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>    
+-->
+    <!-- TODO: brought these over from the old pom. do we need it? -->
+    <dependency>
+      <groupId>org.geoserver.extension</groupId>
+      <artifactId>gs-ogr</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>
+    <dependency>
+     <groupId>org.geotools</groupId>
+     <artifactId>gt-imageio-ext-gdal</artifactId>
+     <version>${geotools.version}</version>
+    </dependency>
+    <!-- GeoGit -->
+    <dependency>
+      <groupId>org.opengeo.geoserver</groupId>
+      <artifactId>gs-geogig</artifactId>
+      <version>${gsgeogig.version}</version>
+      <classifier>shaded-plugin</classifier>
+      <exclusions>
+        <exclusion><groupId>org.geogig</groupId><artifactId>geogig-core</artifactId></exclusion>
+        <exclusion><groupId>org.geogig</groupId><artifactId>geogig-geotools</artifactId></exclusion>
+        <exclusion><groupId>org.geogig</groupId><artifactId>geogig-web-api</artifactId></exclusion>
+        <exclusion><groupId>com.google.code.findbugs</groupId><artifactId>jsr305</artifactId></exclusion>
+        <exclusion><groupId>com.google.guava</groupId><artifactId>guava</artifactId></exclusion>
+        <exclusion><groupId>org.geotools</groupId><artifactId>gt-geojson</artifactId></exclusion>
+        <exclusion><groupId>org.geotools.jdbc</groupId><artifactId>gt-jdbc-spatialite</artifactId></exclusion>
+
+        <!-- syrusm: removing these to deal with the logback binary incompatibility -->
+        <exclusion><groupId>ch.qos.logback</groupId><artifactId>logback-core</artifactId></exclusion>
+        <exclusion><groupId>ch.qos.logback</groupId><artifactId>logback-classic</artifactId></exclusion>
+        <exclusion><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId></exclusion>
+        <exclusion><groupId>org.slf4j</groupId><artifactId>jul-to-slf4j</artifactId></exclusion>
+      </exclusions>
+    </dependency>    
+
+    <!--  test dependencies  -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver</groupId>
+      <artifactId>gs-main</artifactId>
+      <scope>test</scope>
+      <classifier>tests</classifier>
+      <version>${geoserver.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver.web</groupId>
+      <artifactId>gs-web-core</artifactId>
+      <scope>test</scope>
+      <classifier>tests</classifier>
+      <version>${geoserver.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.mockrunner</groupId>
+      <artifactId>mockrunner</artifactId>
+      <version>0.3.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.geotools</groupId>
+      <artifactId>gt-sample-data</artifactId>
+      <version>${geotools.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>xmlunit</groupId>
+      <artifactId>xmlunit</artifactId>
+      <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.easymock</groupId>
+      <artifactId>easymock</artifactId>
+      <version>2.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.easymock</groupId>
+      <artifactId>easymockclassextension</artifactId>
+      <version>2.3</version>
+      <scope>test</scope>
+    </dependency>
+    
+    
+    <!-- Jetty runner dependencies -->
+    <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>jetty</artifactId>
+      <version>${jetty.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>jetty-naming</artifactId>
+      <version>${jetty.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>jetty-plus</artifactId>
+      <version>${jetty.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <properties>
+    <geotools.version>12-SNAPSHOT</geotools.version>
+    <geoserver.version>2.6-SNAPSHOT</geoserver.version>
+    <jetty.version>6.1.8</jetty.version>
+    <gsgeonode.version>2.6-SNAPSHOT</gsgeonode.version>
+    <!-- build gs-geogig locally as the 2.6-SNAPSHOTS are outdated in boundless repo. last built AUG 15 2014 -->
+    <!-- pegging to current latest 2.6 version because at this time, the 2.6-SNAPSHOT shaded plugin jar has not been
+         built since Aug 15. though this version was built a few days ago 2.6-20141211.151657-29  dec 11 2014.
+         http://repo.boundlessgeo.com/main/org/opengeo/geoserver/gs-geogig/2.6-SNAPSHOT/ -->
+    <gsgeogig.version>2.6-SNAPSHOT</gsgeogig.version>
+    <maven.test.search.classdir>true</maven.test.search.classdir>
+  </properties>
+  <profiles>
+    <profile>
+      <id>arcsde</id>
+      <dependencies>
+        <dependency>
+          <groupId>org.geoserver.extension</groupId>
+          <artifactId>arcsde</artifactId>
+          <version>${geoserver.version}</version>
+        </dependency>
+      </dependencies>
+    </profile>
+    <profile>
+      <id>sdeLibs</id>
+      <dependencies>
+        <dependency>
+          <groupId>com.esri</groupId>
+          <artifactId>jsde_sdk</artifactId>
+          <version>${sde.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>com.esri</groupId>
+          <artifactId>jpe_sdk</artifactId>
+          <version>${sde.version}</version>
+        </dependency>
+      </dependencies>
+    </profile>
+   </profiles>
+   
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+            <argLine>-XX:MaxPermSize=256m</argLine>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>maven-jetty-plugin</artifactId>
+        <version>6.1.10</version>
+        <configuration>
+          <stopPort>8890</stopPort>
+          <stopKey>geonode-stop</stopKey>
+          <scanIntervalSeconds>30</scanIntervalSeconds>
+          <contextPath>/geoserver</contextPath>
+          
+          <webApp>${project.build.directory}/geoserver</webApp>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <descriptors>
+            <descriptor>assembly.xml</descriptor>
+            <descriptor>data.xml</descriptor>
+          </descriptors>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <warName>geoserver</warName> 
+          <webappDirectory>${project.build.directory}/geoserver</webappDirectory>
+          <packagingExcludes>**/data/</packagingExcludes>
+          <packagingExcludes>**/gs-web-app*.jar</packagingExcludes>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>war</goal>
+            </goals>
+          </execution>
+        </executions>        
+      </plugin>
+    </plugins>
+
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+    </extensions>
+
+  </build>
+</project>
+
